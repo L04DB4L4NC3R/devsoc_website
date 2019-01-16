@@ -142,12 +142,18 @@ p.lead {
 p.lead2 {
   display: none;
 }
+a.lead2 {
+  display: none;
+}
 
 @media only screen and (max-width: 1200px) {
   p.lead {
     font-size: 2.2rem;
   }
   p.lead2 {
+    display: none;
+  }
+  a.lead2 {
     display: none;
   }
 }
@@ -158,12 +164,18 @@ p.lead2 {
   p.lead2 {
     display: none;
   }
+  a.lead2 {
+    display: none;
+  }
 }
 @media only screen and (max-width: 800px) {
   p.lead {
     font-size: 1.9rem;
   }
   p.lead2 {
+    display: none;
+  }
+  a.lead2 {
     display: none;
   }
 }
@@ -178,6 +190,21 @@ p.lead2 {
     line-height: 1.75;
     margin-bottom: 3.6rem;
     color: rgba(85, 85, 85, 0.95);
+  }
+  a.lead2 {
+    display: block;
+    text-align: center;
+    padding: 1.4rem;
+    margin: 20px auto;
+    width: 100%;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    line-height: inherit;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    border-radius: 5px; 
+
   }
 }
 
@@ -1396,7 +1423,7 @@ input::-moz-focus-inner {
   bottom: 0;
   min-width: 100%; 
   min-height: 100%;
-  opacity: 0.4;
+  opacity: 0.1;
   z-index: -1;
 }
 section#home:before {
@@ -2079,6 +2106,7 @@ html.no-csstransitions .home-content__main {
   .process__text {
     margin-left: 0;
   }
+  
 }
 
 
@@ -2964,6 +2992,10 @@ html.no-csstransitions .home-content__main {
   .cl-go-top::before,
   .cl-go-top::after {
     display: none;
+  }
+  .cl-go-top a {
+    display: none;
+
   }
 
 
