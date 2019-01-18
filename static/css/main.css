@@ -204,8 +204,8 @@ a.lead2 {
     background-color: rgba(0, 0, 0, 0.2);
     font-size: 20px;
     border-radius: 5px; 
-
   }
+  
 }
 
 em, i, strong, b {
@@ -1423,18 +1423,24 @@ input::-moz-focus-inner {
   bottom: 0;
   min-width: 100%; 
   min-height: 100%;
-  opacity: 0.1;
+  opacity: 0.2;
   z-index: -1;
 }
+@media only screen and (max-width: 450px) {
+  video {
+    display: none;
+  }
+}
+
 section#home:before {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%; 
   min-height: 100%;
-  opacity: 0.3;
-  z-index:0;
-  background-color: #1c72e2;
+  opacity: 0.5;
+  z-index:-1;
+  background-color: #1c5998;
 }
 
 
@@ -1913,6 +1919,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 400px) {
   .s-home {
     min-height: 630px;
+    background-image: url('images\bg.jpg');
   }
 
   .home-content h1 {
